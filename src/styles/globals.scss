@@ -1,0 +1,59 @@
+@use "scss/swiper";
+@use "scss/form";
+@use "scss/buttons";
+@use "scss/fonts";
+@use "modules/pages/home";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply overflow-x-hidden max-w-screen-5xl mx-auto font-inter;
+}
+p {
+  @apply max-sm:text-sm;
+}
+.custom_container_margin {
+  @apply mx-3 lg:mx-[2%] xl:mx-[3%];
+  // @apply mx-3 lg:mx-[2%] xl:mx-[3%] py-3;
+}
+.custom_container_padding {
+  @apply px-3 lg:px-[2%] xl:px-[3%] py-3;
+}
+.space_from_top {
+  @apply pt-14;
+}
+.normal_space_from_top {
+  @apply mt-6;
+}
+img {
+  @apply h-full w-full object-contain;
+}
+
+.custom_size_icons {
+  @apply w-5 h-5 cursor-pointer text-white;
+}
+.custom_size_icons_dark {
+  @apply w-5 h-5 cursor-pointer text-[#1E1E1E];
+
+  &.liked {
+    @apply text-red-500;
+  }
+}
+.custom_size_icons_secondary {
+  @apply w-6 h-6 cursor-pointer text-[#353D4A];
+}
+.icon_bg_solid {
+  @apply w-6 h-6 text-white bg-[#333D49] p-1 rounded-full;
+}
+.icon_bg_solid_white {
+  @apply w-6 h-6 text-[black] bg-white p-1 rounded-full;
+}
+
+.two_tone_heart_icon {
+  @apply absolute left-0 -top-10 sm:top-0;
+  svg{
+    @apply max-sm:w-14 max-sm:h-auto;
+  }
+}

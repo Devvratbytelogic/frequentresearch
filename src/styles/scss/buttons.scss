@@ -1,0 +1,17 @@
+button {
+  // @apply px-5 #{!important};
+}
+.btn_global {
+  &.rounded_btn {
+    @apply rounded-full #{!important};
+  }
+  &.outline_secondary {
+    @apply border border-secondary text-secondary bg-transparent text-2xl font-medium font-cookie_regular;
+  }
+  &.secondary_btn {
+    @apply bg-secondary text-white;
+  }
+  &.dark_btn {
+    @apply bg-[#555555] text-white;
+  }
+}
