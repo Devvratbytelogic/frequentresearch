@@ -34,14 +34,14 @@ export default function CommonCard({ item, index }: CommonCardProps) {
                         height={1000}
                     />
                 </div>
-               <div className={`p-2`}>
+               <div className={`p-2 space-y-4`}>
                     <h3 className="font-bold text-xl md:text-3xl text-center">
                         <span className="text-[#555555] font-medium font-cookie_regular">{item?.normalTitle} </span>
                         <span className={`font-semibold font-playfair_bold ${item.textColor}`}>
                             {item.title}
                         </span>
                     </h3>
-                    <div className="w-1/4 h-0.5 opacity-50 bg-[#727272]"></div>
+                    <div className="w-1/4 m-auto h-0.5 opacity-50 bg-[#727272]"></div>
                     <p className="text-xs md:text-sm text-center text-[#727272] md:w-[80%] m-auto">{item.description}</p>
                </div>
             </motion.div>
@@ -67,8 +67,8 @@ export const CommonCardSquare = ({ item, index }: CommonCardProps) => {
                         height={1000}
                     />
                 </div>
-                <div className={`p-2`}>
-                    <h3 className="font-bold text-3xl text-center">
+                <div className={`p-2 space-y-4`}>
+                <h3 className="font-bold text-3xl text-center">
                         <span className="text-[#555555] font-medium font-cookie_regular">{item?.normalTitle} </span>
                         <span className={`font-semibold font-playfair_bold ${item.textColor}`}>
                             {item.title}
