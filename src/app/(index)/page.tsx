@@ -3,7 +3,7 @@ import WhoWeAre from '@/components/page/home/WhoWeAre'
 import WhyChooseUs from '@/components/page/home/WhyChooseUs'
 import React from 'react'
 
-export default function HomPage() {
+export default function HomePage() {
   return (
     <>
       <div className={`custom_container_margin`}>
